@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.university.configuration.NeighborhoodMapper">
+    <select id="getNeighborhoodIdentity" resultType="com.example.university.entity.NeighborhoodIdentity">
+        select Community, CityID, ID from neighborhoods;
+    </select>
+    <select id="getNeighborhoodInfo" resultType="com.example.university.entity.Neighborhood" parameterType="integer">
+        select * from neighborhoods where id=#{id};
+    </select>
+</mapper>

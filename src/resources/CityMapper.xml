@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.university.configuration.CityMapper">
+    <select id="getCityIdentity" resultType="com.example.university.entity.CityIdentity">
+        select City, StateID, ID from cities;
+    </select>
+    <select id="getCityInfo" resultType="com.example.university.entity.City" parameterType="integer">
+        select * from cities where id=#{id};
+    </select>
+</mapper>

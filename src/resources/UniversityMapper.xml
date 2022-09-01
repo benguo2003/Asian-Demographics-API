@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.university.configuration.UniversityMapper">
+    <select id="getUniversityInfo" resultType="com.example.university.entity.University">
+        select * from colleges where id=#{id};
+    </select>
+    <select id="getUniversityIdentity" resultType="com.example.university.entity.UniversityIdentity">
+        select University, ID from colleges;
+    </select>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://g2-master-cluster-cluster.cluster-cxjhnbrmf4qd.us-west-2.rds.amazonaws.com:3306/yamibuy_intern"/>
+                <property name="username" value="it.ben_guo"/>
+                <property name="password" value="ph31M6BZbh65C0hbWmNG"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/CityMapper.xml"/>
+        <mapper resource="mapper/UniversityMapper.xml"/>
+        <mapper resource="mapper/StateMapper.xml"/>
+        <mapper resource="mapper/NeighborhoodMapper.xml"/>
+    </mappers>
+</configuration>
