@@ -1,0 +1,21 @@
+package com.example.university.entity;
+
+import java.io.Serializable;
+
+public class NeighborhoodIdentity implements Serializable {
+
+    private final static long serialVersionUID = 1234567L;
+    private final String name;
+    private final int cityID;
+    private final int id;
+
+    public NeighborhoodIdentity(String name, int cityID, int id){
+        this.name = name;
+        this.cityID = cityID;
+        this.id = id;
+    }
+
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public int getCityID() { return cityID; }
+}
