@@ -7,10 +7,10 @@
         <environment id="development">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
-                <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://g2-master-cluster-cluster.cluster-cxjhnbrmf4qd.us-west-2.rds.amazonaws.com:3306/yamibuy_intern"/>
-                <property name="username" value="it.ben_guo"/>
-                <property name="password" value="ph31M6BZbh65C0hbWmNG"/>
+                <property name="driver" value=""/>
+                <property name="url" value=""/>
+                <property name="username" value=""/>
+                <property name="password" value=""/>
             </dataSource>
         </environment>
     </environments>
